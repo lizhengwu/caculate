@@ -76,8 +76,8 @@
             // 显示结果
             document.getElementById('result').innerHTML = `
                 <strong>需要补充的金额：</strong><span class="highlight">${requiredAmount.toFixed(2)}</span> 元<br>
-                <strong>建议补充金额：</strong><span class="highlight">${suggestedAmount.toLocaleString()}</span> 元<br>
-                <small>计算逻辑：目标天数（${targetDays}天）× 100,000元 - 当前日均 × 当前天数 / 剩余天数（${remainingDays}天） - 当前余额</small>
+                <strong>建议补充金额：</strong><span class="highlight">${suggestedAmount.toLocaleString()}</span> 元（需存放至目标日期）<br>
+                <small>计算逻辑：（目标天数（${targetDays}天）× 100,000元 - 当前日均 × 当前天数 )/ 剩余天数（${remainingDays}天） - 当前余额</small>
             `;
         }
     </script>
